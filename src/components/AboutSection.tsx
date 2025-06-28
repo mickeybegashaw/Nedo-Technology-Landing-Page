@@ -6,16 +6,15 @@ const AboutSection = () => {
     <DotBackground>
     <section
       id="about"
-      className="px-26 md:px-32 flex flex-col py-28"
+      className="px-5 lg:px-32 flex flex-col py-28"
     >
-
-      <div className="flex gap-9 justify-center">
+      <div className="flex flex-col md:flex-row gap-9 justify-center">
         <motion.h1
            initial={{ opacity: 0.0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{duration: 0.5, delay: 0.5}}
 
-        className="text-5xl font-bold text-white leading-tight">
+        className="text-4xl md:text-5xl font-bold text-white leading-tight">
           We're Not Just company,{" "}
           <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             We're Digital Architects

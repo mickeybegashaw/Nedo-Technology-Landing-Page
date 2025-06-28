@@ -9,13 +9,13 @@ const HeroSection = () => {
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 1,
-          duration: 1,
+          delay: 0.5,
+          duration: 0.5,
           ease: "easeInOut",
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-5 md:px-20"
       >
-        <div className="text-3xl  md:text-7xl w-full  lg:w-[65%]  font-bold text-center text-white mt-20 leading-tight">
+        <div className="text-4xl  md:text-7xl w-full  lg:w-[65%]  font-bold text-center text-white mt-20 leading-tight">
           Smart Solutions for a{" "}
           <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Digital World
