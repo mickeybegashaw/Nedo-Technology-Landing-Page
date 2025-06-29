@@ -22,7 +22,7 @@ const HeroSection = () => {
           </span>
           .
         </div>
-        <div className="text-base md:text-2xl w-[90%] lg:w-[65%] text-center  text-neutral-200 py-4">
+        <div className="text-base md:text-xl w-[90%] lg:w-[65%] text-center  text-neutral-200 py-4">
           Powering the Next Digital Evolution with cutting-edge technology and
           innovative solutions.
         </div>

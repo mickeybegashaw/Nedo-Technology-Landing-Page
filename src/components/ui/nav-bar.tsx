@@ -153,6 +153,8 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
 export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
   return (
     <motion.div
+     initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 20 }}
       animate={{
         backdropFilter: visible ? "blur(10px)" : "none",
         boxShadow: visible

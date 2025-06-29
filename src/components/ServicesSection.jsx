@@ -54,7 +54,7 @@ const ServicesSection = () => {
             viewport={{ amount: 0.3 }}
             transition={{
               duration: 0.5,
-              delay: index * 0.5,
+              delay: index * 0.2,
               ease: "easeOut",
             }}
           >

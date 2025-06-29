@@ -6,7 +6,7 @@ const AboutSection = () => {
     <DotBackground>
     <section
       id="about"
-      className="px-5 lg:px-32 flex flex-col py-28"
+      className="px-5 lg:px-32 flex flex-col py-36"
     >
       <div className="flex flex-col md:flex-row gap-9 justify-center">
         <motion.h1
