@@ -1,8 +1,15 @@
 "use client";
 
 import { motion } from "motion/react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaTiktok } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaTiktok,
+} from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -16,9 +23,16 @@ const Footer = () => {
       >
         {/* Company Info */}
         <div>
-          <h3 className="text-xl font-semibold text-white mb-4">Nedo Technology</h3>
+          <Image
+            src={"/NedoWhiteLogo.png"}
+            alt="logo"
+            width={140}
+            height={40}
+            className="h-15 md:h-14 w-16 mb-5 md:w-28 object-contain"
+          />{" "}
           <p className="text-sm">
-            Building digital solutions for Ethiopia and beyond. Passion. Innovation. Impact.
+            Building digital solutions for Ethiopia and beyond. Passion.
+            Innovation. Impact.
           </p>
         </div>
 
@@ -26,10 +40,26 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link href="#services" className="hover:text-white">Services</Link></li>
-            <li><Link href="#contact" className="hover:text-white">Contact</Link></li>
-            <li><Link href="#about" className="hover:text-white">About</Link></li>
-            <li><Link href="#culture" className="hover:text-white">Culture</Link></li>
+            <li>
+              <Link href="#services" className="hover:text-white">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link href="#contact" className="hover:text-white">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link href="#about" className="hover:text-white">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="#culture" className="hover:text-white">
+                Culture
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -47,16 +77,36 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold text-white mb-4">Follow Us</h4>
           <div className="flex space-x-4 text-xl">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500"
+            >
               <FaFacebook />
             </a>
-            <a href="https://www.tiktok.com/@nedo_technology?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+            <a
+              href="https://www.tiktok.com/@nedo_technology?is_from_webapp=1&sender_device=pc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+            >
               <FaTiktok />
             </a>
-            <a href="https://www.linkedin.com/company/nedo-technology-solutions" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
+            <a
+              href="https://www.linkedin.com/company/nedo-technology-solutions"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-300"
+            >
               <FaLinkedin />
             </a>
-            <a href="https://instagram.com/nedo_technology" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
+            <a
+              href="https://instagram.com/nedo_technology"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-500"
+            >
               <FaInstagram />
             </a>
           </div>

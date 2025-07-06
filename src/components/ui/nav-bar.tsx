@@ -243,11 +243,11 @@ export const NavbarLogo = () => {
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <Image
-        src={"/WhiteLogo.png"}
+        src={"/NedoWhiteLogo.png"}
         alt="logo"
-        width={40}
+        width={140}
         height={40}
-        className="h-10 md:h-14 w-16 md:w-28 object-contain"
+        className="h-15 md:h-14 w-16 md:w-28 object-contain"
       />
     </a>
   );
