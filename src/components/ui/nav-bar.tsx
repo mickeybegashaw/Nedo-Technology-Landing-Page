@@ -154,7 +154,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
   return (
     <motion.div
      initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
       animate={{
         backdropFilter: visible ? "blur(10px)" : "none",
         boxShadow: visible
@@ -164,7 +164,6 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
         paddingRight: visible ? "12px" : "10px",
         paddingLeft: visible ? "12px" : "10px",
         borderRadius: visible ? "4px" : "2rem",
-        y: visible ? 0 : 20,
       }}
       transition={{
         type: "spring",
@@ -173,7 +172,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
       }}
       className={cn(
         "relative z-50 mx-auto flex  w-[90%]  flex-col items-center justify-between bg-transparent px-0 py-2 lg:hidden",
-        !visible && "bg-gradient-to-b bg-amber-50/30 rounded-4xl",
+        !visible && "bg-gradient-to-b bg-amber-50/30 rounded-4xl mt-5",
         className,
       )}
     >
@@ -240,14 +239,14 @@ export const NavbarLogo = () => {
   return (
     <a
       href="#"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+      className="relative z-20 mr-4 flex items-center space-x-2  text-sm font-normal text-black"
     >
       <Image
         src={"/NedoWhiteLogo.png"}
         alt="logo"
         width={140}
         height={40}
-        className="h-15 md:h-14 w-16 md:w-28 object-contain"
+        className="h-12 md:h-14 w-24 md:w-28 object-contain"
       />
     </a>
   );

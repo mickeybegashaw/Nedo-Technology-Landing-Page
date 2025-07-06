@@ -28,7 +28,7 @@ const Footer = () => {
             alt="logo"
             width={140}
             height={40}
-            className="h-15 md:h-14 w-16 mb-5 md:w-28 object-contain"
+            className="h-20 md:h-14 w-28 mb-5 md:w-28 object-contain"
           />{" "}
           <p className="text-sm">
             Building digital solutions for Ethiopia and beyond. Passion.
