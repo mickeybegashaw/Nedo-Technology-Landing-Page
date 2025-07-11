@@ -28,9 +28,9 @@ const Footer = () => {
             alt="logo"
             width={140}
             height={40}
-            className="h-20 md:h-14 w-28 mb-5 md:w-28 object-contain"
+            className="w-20 mdw-24 object-contain"
           />{" "}
-          <p className="text-sm">
+          <p className="text-base mt-4">
             Building digital solutions for Ethiopia and beyond. Passion.
             Innovation. Impact.
           </p>
@@ -39,7 +39,7 @@ const Footer = () => {
         {/* Quick Links */}
         <div>
           <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-2 text-base">
             <li>
               <Link href="#services" className="hover:text-white">
                 Services
@@ -66,7 +66,7 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
-          <ul className="text-sm space-y-2">
+          <ul className="text-base space-y-2">
             <li>Phone: +251 97 907 6934 </li>
             <li>Email: nedotechnologysolutions@gmail.com</li>
             <li>Addis Ababa, Ethiopia</li>
@@ -114,7 +114,7 @@ const Footer = () => {
       </motion.div>
 
       {/* Bottom Bar */}
-      <div className="text-center text-sm text-gray-500 mt-12 border-t border-gray-800 pt-6">
+      <div className="text-center text-base text-gray-500 mt-12 border-t border-gray-800 pt-6">
         &copy; {new Date().getFullYear()} Nedo Technology. All rights reserved.
       </div>
     </footer>
