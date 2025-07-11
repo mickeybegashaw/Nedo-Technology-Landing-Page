@@ -133,14 +133,14 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="group relative px-4 py-2 text-md text-white transition-colors duration-200 hover:text-black"
+          className="group relative px-4 py-2 text-base text-white transition-colors duration-200 hover:text-white"
           key={`link-${idx}`}
           href={item.link}
         >
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800/50"
             />
           )}
           <span className="relative z-20">{item.name}</span>
@@ -160,10 +160,10 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
         boxShadow: visible
           ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
           : "none",
-        width: visible ? "100%" : "90%",
+        width: visible ? "100%" : "95%",
         paddingRight: visible ? "12px" : "10px",
-        paddingLeft: visible ? "12px" : "10px",
-        borderRadius: visible ? "4px" : "2rem",
+        paddingLeft: visible ? "12px" : "15px",
+        borderRadius: visible ? "4px" : "1.5rem",
       }}
       transition={{
         type: "spring",
@@ -171,8 +171,8 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
         damping: 50,
       }}
       className={cn(
-        "relative z-50 mx-auto flex  w-[90%]  flex-col items-center justify-between bg-transparent px-0 py-2 lg:hidden",
-        !visible && "bg-gradient-to-b bg-amber-50/30 rounded-4xl mt-5",
+        "relative z-50 mx-auto flex  w-[90%]  flex-col items-center justify-between bg-transparent px-0 py-1 lg:hidden",
+        !visible && "bg-gradient-to-b bg-amber-50/30 rounded-3xl mt-5",
         className,
       )}
     >
@@ -244,9 +244,9 @@ export const NavbarLogo = () => {
       <Image
         src={"/NedoWhiteLogo.png"}
         alt="logo"
-        width={140}
+        width={100}
         height={40}
-        className="h-12 md:h-14 w-24 md:w-28 object-contain"
+        className="md:w-24 w-20 object-contain"
       />
     </a>
   );
