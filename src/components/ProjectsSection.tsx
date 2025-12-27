@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { ContainerScroll } from "./ui/container-scroll-animation";
-import { image } from "framer-motion/client";
+
 
 const projects = [
   {

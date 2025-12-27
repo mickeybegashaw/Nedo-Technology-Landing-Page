@@ -25,6 +25,7 @@ const services = [
     description:
       "Intuitive and engaging user interfaces designed to enhance user experience across all platforms.",
   },
+  
   {
     icon: <MdPhoneIphone />,
     title: "Mobile Apps",
