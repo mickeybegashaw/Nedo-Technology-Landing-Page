@@ -24,11 +24,11 @@ const Footer = () => {
         {/* Company Info */}
         <div>
           <Image
-            src={"/NedoWhiteLogo.png"}
+            src={"/logo-white.png"}
             alt="logo"
             width={140}
             height={40}
-            className="w-20 mdw-24 object-contain"
+            className="w-28 md:w-36 object-contain"
           />{" "}
           <p className="text-base mt-4">
             Building digital solutions for Ethiopia and beyond. Passion.

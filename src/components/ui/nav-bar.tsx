@@ -108,7 +108,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         minWidth: "90%",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-[90%]  flex-row items-center justify-between self-start  bg-transparent px-15 py-2 lg:flex rounded-xl ",
+        "relative z-[60] mx-auto hidden w-[90%]  flex-row items-center justify-between self-start  bg-transparent px-15 py-4 lg:flex rounded-xl ",
 !visible && "bg-gradient-to-b bg-amber-50/30 rounded-4xl mt-5",
         className,
       )}
@@ -171,7 +171,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
         damping: 50,
       }}
       className={cn(
-        "relative z-50 mx-auto flex  w-[90%]  flex-col items-center justify-between bg-transparent px-0 py-1 lg:hidden",
+        "relative z-50 mx-auto flex  w-[90%]  flex-col items-center justify-between bg-transparent px-0 py-3 lg:hidden",
         !visible && "bg-gradient-to-b bg-amber-50/30 rounded-3xl mt-5",
         className,
       )}
@@ -242,11 +242,11 @@ export const NavbarLogo = () => {
       className="relative z-20 mr-4 flex items-center space-x-2  text-sm font-normal text-black"
     >
       <Image
-        src={"/NedoWhiteLogo.png"}
+        src={"/logo-white.png"}
         alt="logo"
         width={100}
         height={40}
-        className="md:w-24 w-20 object-contain"
+        className="md:w-36 w-32 object-contain"
       />
     </a>
   );
